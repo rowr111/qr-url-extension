@@ -5,10 +5,10 @@
   "description": "Shows the current page's domain as a QR code.",
   "permissions": ["tabs", "activeTab"],
   "action": {
-    "default_popup": "src/popup.html"
+    "default_popup": "popup.html"
   },
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "background.js"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"

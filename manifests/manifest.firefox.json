@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "URL as QR",
+  "version": "1.0.0",
+  "description": "Shows the current page's domain as a QR code.",
+  "permissions": ["tabs", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "qr-url-extension@local"
+    }
+  }
+}

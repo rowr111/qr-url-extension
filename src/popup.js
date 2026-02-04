@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                            (currentTime.getTimezoneOffset()/60<10 ? "0" : "")+
                            (Math.abs(currentTime.getTimezoneOffset()/60))+":00";
 
-    // Interval set to 200ms to limit the maximum offset between system time and time displayed 
+    // Interval set to 1000ms to limit the maximum offset between system time and time displayed 
     setInterval(()=>{
       // .toISOString() returns UTC zero offset time, not local time
       // Solution: subtract local offset from current time, format with .toISOString(), and add timezone marker
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         size: 128,
         level: 'M'
       });
-    }, 200)
+    }, 1000)
 
     new QRious({
       element: document.getElementById('qr'),
