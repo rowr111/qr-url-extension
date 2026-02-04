@@ -6,6 +6,7 @@ This is meant to work with baosec as a key for looking up passwords in the passw
 
 ## Structure
 - `src/`: shared extension files
+- `src/icons/`: app icons and logo source
 - `manifests/`: per-browser manifests
 - `scripts/`: build scripts
 - `dist/`: build output (generated)
